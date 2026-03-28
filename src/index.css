@@ -1,0 +1,175 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* ============================
+   MYRIAD PRO FONT FAMILY
+============================ */
+
+/* Regular */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Semibold */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./fonts/MYRIADPRO-SEMIBOLD.OTF') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ============================
+   MBF ADVANIUM FONT
+============================ */
+@font-face {
+  font-family: 'MBF Advanium';
+  src: url('./fonts/MBF-ADVANIUM.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Optional: Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet');
+
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: 'Myriad Pro',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Smooth background transition when switching theme */
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-css {
+  border-radius: 18px;
+   box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),       /* outer shadow */
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.35);
+      transition: all 0.3s ease-in-out;
+  
+}
+.shadow_card {
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),       /* outer shadow */
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease-in-out;
+}
+
+.shadow-css {
+ box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.5),       /* outer shadow */
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease-in-out;
+  
+}
+.shadow-css:hover {
+  /* Outer shadow + Inner shadow together */
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.5),       /* outer shadow */
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.25); /* inner shadow */
+  transition: all 0.3s ease-in-out;
+}
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 15s ease infinite;
+}
+
+/* Add this to your index.css or global.css */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #073d44 !important;
+  display: none !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(230, 211, 212, 1) !important;
+  opacity: 1 !important;
+ 
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(3, 3, 3, 1) !important;
+}
+.dark .swiper-pagination-bullet {
+  background: rgba(100, 116, 139, 1) !important; /* gray-500 */
+}
+
+.dark .swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+
+.ap-li {
+  border-color: transparent;
+}
+
+.ap-active {
+  border-color: #41b79a !important;
+}
+.container-custom {
+  max-width: 1920px;
+  width: 100%;
+}
+
+
+@media (min-width: 1024px) {
+#portfolio .swiper {
+  height: 550px !important;
+}
+}
+@media (max-width: 1024px) {
+#portfolio .swiper {
+  height: 450px !important;
+}
+}
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.hr {
+  height: 0.125rem;
+  background-color: #24A28E;
+  border: none;
+  border-radius: 0.125rem;
+}

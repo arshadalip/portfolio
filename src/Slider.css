@@ -1,0 +1,26 @@
+.logo-slider-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-slider-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 25s linear infinite;
+}
+
+/* Infinite left scroll animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause the slider on hover */
+.logo-slider-container:hover .logo-slider-track {
+  animation-play-state: paused;
+}
